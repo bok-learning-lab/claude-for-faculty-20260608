@@ -1,4 +1,4 @@
-# claude-cowork-20260608
+# claude-for-faculty-20260608
 
 Workshop materials for **Day 1** of the third week of the *Summer of
 Claude* faculty series at the Bok Center / Learning Lab, Harvard.
@@ -35,7 +35,7 @@ literature samples, glossary references) and finish by drafting a paper
 
 - Week 1 (2026-05-18 → 05-21): `claude-for-faculty-20260518/`
 - Week 2 (2026-06-01): `claude-for-faculty-20260601/`
-- **Week 3 (2026-06-08): this repo.**
+- **Week 3 (2026-06-08): `claude-for-faculty-20260608/` — this repo.**
 
 The session was redesigned after the Week-2 run; see
 `day-1-plan-of-show.md` for what changed and why.
