@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>People Page</title>
+<style>
+  :root {
+    --bg: #000000;
+    --fg: #ffffff;
+    --muted: #b5b5b5;
+    --accent: #d9b66a;
+    --rule: rgba(255, 255, 255, 0.12);
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+    color: var(--fg);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.6;
+  }
+
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  header.page-header {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40px 40px 40px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  header.page-header h1 {
+    font-size: 56px;
+    font-weight: 300;
+    letter-spacing: -0.5px;
+    margin: 0 0 12px 0;
+  }
+
+  header.page-header p {
+    color: var(--muted);
+    font-size: 17px;
+    margin: 0;
+    max-width: 720px;
+  }
+
+  main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+  }
+
+  .person {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 40px;
+    padding: 48px 0;
+    border-bottom: 1px solid var(--rule);
+    align-items: start;
+  }
+
+  .person:last-child {
+    border-bottom: none;
+  }
+
+  .person .photo {
+    width: 260px;
+    background: transparent;
+  }
+
+  .person .photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .person .bio h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin: 0 0 6px 0;
+    letter-spacing: -0.2px;
+  }
+
+  .person .bio .role {
+    color: var(--accent);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    margin: 0 0 18px 0;
+  }
+
+  .person .bio p {
+    color: #e6e6e6;
+    font-size: 16px;
+    margin: 0 0 14px 0;
+  }
+
+  footer {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+    color: var(--muted);
+    font-size: 13px;
+    border-top: 1px solid var(--rule);
+    text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    header.page-header { padding: 56px 24px 32px 24px; }
+    header.page-header h1 { font-size: 40px; }
+    main { padding: 24px; }
+    .person {
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding: 36px 0;
+      justify-items: center;
+      text-align: left;
+    }
+    .person .photo { width: 100%; max-width: 320px; }
+    .person .bio { width: 100%; }
+  }
+</style>
+</head>
+<body>
+
+<header class="page-header">
+  <h1>People</h1>
+  <p>The team at the Learning Lab, Harvard's Derek Bok Center for Teaching and Learning.</p>
+</header>
+
+<main>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/marlon.png" alt="Marlon Kuzmick" /></div>
+    <div class="bio">
+      <h2>Marlon Kuzmick</h2>
+      <div class="role">Director, Learning Lab</div>
+      <p>Marlon Kuzmick directs the Learning Lab at Harvard's Bok Center for Teaching and Learning, where he works with faculty and students to design experiments at the intersection of teaching, technology, and creative practice. Trained as a writing teacher in the Harvard College Writing Program, he continues to approach pedagogy from the perspective that students aren't just "learning to write" but "writing to learn." This orientation now extends into multimodal communication&mdash;film, data visualization, performance, digital media&mdash;and into the rapidly evolving world of generative AI.</p>
+      <p>At the Learning Lab, Marlon leads projects that treat academic communication as a site of invention: media and AI systems are not just vessels for ideas but engines for generative thinking and transformative learning. Current initiatives include supporting faculty in the responsible adoption of generative AI for teaching and research, developing experimental AI-driven classrooms and studio environments, and training students and instructors alike to use emerging tools critically, creatively, and rigorously. His work emphasizes building pilots and prototypes&mdash;whether in writing, media production, or AI augmentation&mdash;that help higher education imagine what teaching and scholarship can become.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/christine.png" alt="Christine" /></div>
+    <div class="bio">
+      <h2>Christine</h2>
+      <div class="role">Assistant Director, Learning Lab</div>
+      <p>As Assistant Director of the Learning Lab, Christine collaborates with students, faculty, and the Learning Lab team to develop multimodal projects that have applications in a range of courses and departments across the College and Harvard Griffin Graduate School of Arts and Sciences. In this capacity, Christine works closely with the Bok Graduate Fellows (BGFs), supporting and documenting BGF projects.</p>
+      <p>Christine received her MA in Literary and Cultural Studies from Carnegie Mellon University and holds a PhD in American Studies from Boston University. When not at the Learning Lab, Christine can be found watching movies.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/jordan.png" alt="Jordan" /></div>
+    <div class="bio">
+      <h2>Jordan</h2>
+      <div class="role">Assistant Director, Learning Lab</div>
+      <p>As Assistant Director of the Learning Lab, Jordan facilitates internal working groups of fellows and staff to develop in house capabilities and actualize the learning and design goals of our faculty collaborators. She received her Masters in Education from the Harvard Graduate School of Education's Arts in Education Program, and is invested in curating learning environments that leverage multi-modal practices for communicating academic ideas.</p>
+      <p>She brings her experience as an artist, educator, and convener and her skills utilizing the technical mediums of the Learning Lab to each faculty consultation, course workshop, and bespoke design challenge that emerges. Above all, Jordan works to create a warm and encouraging environment for students and faculty alike.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/madeleine.png" alt="Madeleine Woods" /></div>
+    <div class="bio">
+      <h2>Madeleine Woods</h2>
+      <div class="role">Assistant Director, AI Initiatives</div>
+      <p>Madeleine Woods is Assistant Director, AI Initiatives at Harvard's Derek Bok Center Learning Lab, where she designs tools and experiments that help faculty and students engage with AI as both a medium and method for learning. With a background in folklore and linguistics (Harvard BA, Cambridge MA), she approaches AI not as a shortcut but as a force reshaping how we design, test, and assess student thinking.</p>
+      <p>Her work focuses on making assignments more AI-resilient or AI-enhanced&mdash;reimagining blue book exams, designing paper-based and oral assessments, while also prototyping future assignment types. She leads projects exploring how AI can challenge and extend the ways we read, write, speak, and build knowledge across disciplines. Madeleine is also a Residential Tutor in Adams House.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/dani.png" alt="Dani" /></div>
+    <div class="bio">
+      <h2>Dani</h2>
+      <div class="role">Project Manager, Learning Lab</div>
+      <p>Dani manages the Learning Lab's many projects, overseeing partnerships, resources, and workflows to support creative approaches to teaching and learning. She also coordinates tasks across the team to ensure smooth operations and effective collaboration. Dani earned a Bachelor of Science in Human Services from Northeastern University in 2018 and has been at the Bok Center ever since.</p>
+      <p>For any questions related to the Learning Lab, please reach out to <a href="mailto:learninglab@fas.harvard.edu">learninglab@fas.harvard.edu</a>.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/blue.png" alt="Blue" /></div>
+    <div class="bio">
+      <h2>Blue</h2>
+      <div class="role">Studio Media Manager</div>
+      <p>Blue studied film at MassArt and is now the Studio Media Manager at the Learning Lab, where she oversees the Lab's tech, media acquisition, and editing workflows. From cameras and capture gear to the post-production pipeline, Blue keeps the studio running and makes sure every project has the equipment, footage, and editing support it needs to come together.</p>
+    </div>
+  </section>
+
+  <section class="person">
+    <div class="photo"><img src="bok-people/jungyoon.png" alt="Jungyoon" /></div>
+    <div class="bio">
+      <h2>Jungyoon</h2>
+      <div class="role">Postdoctoral Fellow in Artificial Intelligence</div>
+      <p>As a Postdoctoral Fellow in Artificial Intelligence, Jungyoon works with faculty and teaching fellows to support learning both with and about AI, by helping them integrate AI tools into their teaching and critically engage with how AI is reshaping education. Her research explores how users navigate processes of meaning-making with AI, drawing on close, qualitative analyses of interaction data to understand how users interpret and engage with AI systems in relation to the surrounding social context.</p>
+      <p>More broadly, Jungyoon is interested in how people interact with and through digital technologies to achieve social goals. She also conducts research on multimodality, interactivity, and storytelling on social media. Prior to joining the Bok Center, Jungyoon was an Assistant Teaching Professor in the Department of Linguistics at Georgetown University. She received her Ph.D. and M.A. in Linguistics from Georgetown, and her B.A. in English from Seoul National University.</p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Harvard's Derek Bok Center for Teaching and Learning &middot; Learning Lab
+</footer>
+
+</body>
+</html>
